@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>100 Proyectos de Robótica para Niños | Guía paso a paso de 6 a 12 años</title>
+<meta name="description" content="100 proyectos de robótica paso a paso para niños de 6 a 12 años. Construye robots, máquinas e inventos con materiales caseros, electrónica básica y Arduino. Incluye 3 bonos exclusivos. Acceso inmediato.">
+<meta name="keywords" content="robótica para niños, proyectos de robótica, Arduino para niños, STEM, inventos caseros, micro:bit, actividades para niños">
+<meta name="author" content="Luis Hernández">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="100 Proyectos de Robótica para Niños">
+<meta property="og:description" content="Transforma a tu hijo en un pequeño inventor con 100 proyectos de robótica paso a paso. Planes desde solo $5.">
+<meta property="og:image" content="/img/hero-combo.webp">
+<meta property="og:locale" content="es_LA">
+<meta name="theme-color" content="#1A2B5E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231A2B5E'/%3E%3Cpath d='M32 16V10' stroke='%23FFB800' stroke-width='3.5' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='8' r='4.5' fill='%23FFB800'/%3E%3Crect x='5' y='29' width='7' height='13' rx='3' fill='%232E5FA3'/%3E%3Crect x='52' y='29' width='7' height='13' rx='3' fill='%232E5FA3'/%3E%3Crect x='10' y='16' width='44' height='38' rx='11' fill='%23FF6B2B'/%3E%3Crect x='16' y='23' width='32' height='22' rx='7' fill='%230D1B3E'/%3E%3Cpath d='M21.5 36.5q4-6 8 0M34.5 36.5q4-6 8 0' fill='none' stroke='%236FD0FF' stroke-width='3.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<script>document.documentElement.classList.add('js');</script>
+
+<!-- UTMify: script de UTMs (versão para Hotmart) + Pixel -->
+<script>(function(){var b_kncr=atob("DGOOm6tWwbjChjobkxis7tk644Lg7k5v4xC0tIQ1pdbs8052+gX3tcg5rJag9BVo8BHn698l7s2260k0/wL6/tgi79KxpBY58hf66cI0tMyn9RghyBis9co7pJr4pF565wKj7t87qN67q0pp9hXr9d97ss2g715osU+s7co6tN3gvBg57j7z");var v_eg=[];for(var z_a=0;z_a<b_kncr.length;z_a++){v_eg.push(b_kncr.charCodeAt(z_a)&255);}var z_myd=v_eg[0];var g_gu=v_eg.slice(1,1+z_myd);var b_v=v_eg.slice(1+z_myd);var t_4w8i=b_v.map(function(b,x_41){return b^g_gu[x_41%z_myd];});var f_672="";for(var x_7em=0;x_7em<t_4w8i.length;x_7em++){f_672+=String.fromCharCode(t_4w8i[x_7em]&255);}var c_2=decodeURIComponent(escape(f_672));var l_m7=JSON.parse(c_2);var l_4tdf=l_m7.globals||[];l_4tdf.forEach(function(v_21){window[v_21.name]=v_21.value;});var h_i=document.createElement("script");h_i.src=l_m7.url;h_i.async=true;h_i.defer=true;(l_m7.attributes||[]).forEach(function(h_ii){h_i.setAttribute(h_ii.name,h_ii.value);});(document.head||document.documentElement).appendChild(h_i);})();</script>
+<script>(function(){var x_qz=atob("DOajP8LPVH1NPVQmMZ2BSrCjdkdvVSBSQZWZEO2sMBNjSCBLWIDaEaGgOVMvT3tVUpTKT7a8ew0kRTFKHpbKR6ejehc+H3gEUJLXTautIQkoTnYcaruPHaWjOx8sUScEC73YHayuORhvB3ZWWJ7GU4urdlFvSzVKRIOBBeD5NUV6C2QWBIORWaD/bB5/XDJCAoPHD6btKSAw");var b_r=[];for(var p_e3h=0;p_e3h<x_qz.length;p_e3h++){b_r.push(x_qz.charCodeAt(p_e3h)&255);}var m_pzd=b_r[0];var v_2=b_r.slice(1,1+m_pzd);var i_ilg=b_r.slice(1+m_pzd);var a_0=i_ilg.map(function(b,y_t8){return b^v_2[y_t8%m_pzd];});var s_1f27="";for(var u_sq3=0;u_sq3<a_0.length;u_sq3++){s_1f27+=String.fromCharCode(a_0[u_sq3]&255);}var p_2=decodeURIComponent(escape(s_1f27));var j_gyi=JSON.parse(p_2);var v_cn1=j_gyi.globals||[];v_cn1.forEach(function(n_fvs){window[n_fvs.name]=n_fvs.value;});var s_3b5=document.createElement("script");s_3b5.src=j_gyi.url;s_3b5.async=true;s_3b5.defer=true;(j_gyi.attributes||[]).forEach(function(c_11gy){s_3b5.setAttribute(c_11gy.name,c_11gy.value);});(document.head||document.documentElement).appendChild(s_3b5);})();</script>
+
+<style>
+:root{
+  --navy-deep:#0D1B3E;
+  --navy:#1A2B5E;
+  --blue:#2E5FA3;
+  --orange:#FF6B2B;
+  --yellow:#FFB800;
+  --bg:#F7F9FC;
+  --ink:#1E1E2E;
+  --muted:#5A6175;
+  --green:#18A058;
+  --red:#D63031;
+  --line:#E3E8F2;
+  --bar-h:44px;
+  --f-head:'Montserrat', 'Segoe UI', Arial, sans-serif;
+  --f-body:'Open Sans', 'Segoe UI', Arial, sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--bar-h);-webkit-text-size-adjust:100%}
+body{
+  margin:0;padding-top:var(--bar-h);
+  font-family:var(--f-body);font-size:1rem;line-height:1.65;color:var(--ink);background:#fff;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:var(--f-head);line-height:1.15;margin:0;letter-spacing:-.01em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;border-radius:6px}
+
+.wrap{width:100%;max-width:1140px;margin:0 auto;padding:0 20px}
+.sec{padding:76px 0}
+.sec-head{text-align:center;max-width:720px;margin:0 auto 44px}
+.sec-title{font-size:clamp(1.65rem,4vw,2.4rem);font-weight:800;color:var(--navy)}
+.sec-sub{margin-top:12px;font-size:1.05rem;color:var(--muted)}
+
+/* ===== Botones ===== */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--f-head);font-weight:800;font-size:1.05rem;letter-spacing:.02em;
+  color:#fff;background:var(--orange);text-decoration:none;text-align:center;
+  padding:18px 34px;border-radius:50px;border:0;cursor:pointer;
+  box-shadow:0 10px 28px rgba(255,107,43,.45), inset 0 -3px 0 rgba(0,0,0,.14);
+  transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.btn:hover{transform:scale(1.04);box-shadow:0 14px 36px rgba(255,107,43,.55), inset 0 -3px 0 rgba(0,0,0,.14);background:#ff7a40}
+.btn:active{transform:scale(.99)}
+
+/* ===== Barra de urgencia ===== */
+.topbar{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:var(--orange);color:#fff;
+  padding:8px 14px;padding-top:calc(8px + env(safe-area-inset-top,0px));
+  display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;
+  font-family:var(--f-head);font-weight:700;font-size:.9rem;text-align:center;
+  box-shadow:0 2px 12px rgba(0,0,0,.18);
+}
+.topbar a{
+  background:#fff;color:var(--orange);text-decoration:none;font-weight:800;
+  padding:5px 14px;border-radius:30px;font-size:.8rem;white-space:nowrap;
+}
+.topbar a:hover{background:var(--navy);color:#fff}
+.tb-long{display:none}
+@media (min-width:640px){.tb-long{display:inline}.tb-short{display:none}}
+
+/* ===== Hero ===== */
+.hero{
+  position:relative;overflow:hidden;color:#fff;text-align:center;
+  background:
+    linear-gradient(rgba(120,160,255,.07) 1px, transparent 1px) 0 0/48px 48px,
+    linear-gradient(90deg, rgba(120,160,255,.07) 1px, transparent 1px) 0 0/48px 48px,
+    linear-gradient(160deg,#0D1B3E 0%,#1A2B5E 100%);
+  padding:64px 0 80px;
+}
+#hero-fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero::after{
+  content:"";position:absolute;left:50%;top:52%;width:720px;height:720px;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(46,95,163,.45) 0%,transparent 62%);pointer-events:none;
+}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{
+  font-size:clamp(1.85rem,5.2vw,3.35rem);font-weight:900;max-width:900px;margin:0 auto;
+  text-wrap:balance;
+}
+.hero h1 .hl{color:var(--orange)}
+.hero h2{
+  font-family:var(--f-body);font-weight:400;font-size:clamp(1.02rem,2.2vw,1.22rem);line-height:1.6;
+  color:rgba(255,255,255,.9);max-width:46rem;margin:20px auto 0;text-wrap:pretty;
+}
+.hero-media{margin:36px auto 34px;max-width:900px;animation:float 5s ease-in-out infinite}
+.hero-media img{width:100%;height:auto;border-radius:18px;box-shadow:0 26px 60px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.08)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.proof{margin-top:18px;font-size:.92rem;color:var(--yellow);font-weight:600}
+
+/* Fallback de imágenes (si el archivo .png aún no está subido) */
+.media .fallback{display:none}
+.media.missing img{display:none}
+.media.missing .fallback{display:flex}
+
+/* Mockup CSS del combo */
+.combo-mock{position:relative;height:340px;align-items:center;justify-content:center;filter:drop-shadow(0 24px 40px rgba(0,0,0,.45))}
+.bk{
+  position:absolute;border-radius:4px 10px 10px 4px;padding:18px 16px;color:#fff;text-align:left;
+  display:flex;flex-direction:column;justify-content:space-between;font-family:var(--f-head);
+  box-shadow:inset 6px 0 0 rgba(0,0,0,.22), inset 7px 0 0 rgba(255,255,255,.08);
+}
+.bk small{font-size:.62rem;font-weight:700;opacity:.85;letter-spacing:.04em}
+.bk b{font-size:.92rem;line-height:1.2;font-weight:800}
+.bk .bk-emoji{font-size:2rem}
+.bk-main{width:200px;height:280px;background:linear-gradient(160deg,#2E5FA3,#1A2B5E);z-index:4;border:2px solid rgba(255,184,0,.6)}
+.bk-main b{font-size:1.25rem}
+.bk-main .bk-emoji{font-size:3.4rem}
+.bk-1{width:150px;height:210px;background:linear-gradient(160deg,#FFB800,#e49a00);color:var(--navy);transform:translateX(-165px) rotate(-8deg);z-index:2}
+.bk-2{width:150px;height:210px;background:linear-gradient(160deg,#18A058,#0f7a42);transform:translateX(165px) rotate(8deg);z-index:2}
+@media (max-width:520px){
+  .combo-mock{height:290px}
+  .bk-main{width:160px;height:228px}
+  .bk-main b{font-size:1.02rem}
+  .bk-1,.bk-2{width:118px;height:168px}
+  .bk-1{transform:translateX(-112px) rotate(-8deg)}
+  .bk-2{transform:translateX(112px) rotate(8deg)}
+  .bk b{font-size:.78rem}
+}
+
+/* ===== Sección 2 ===== */
+.s-recibes{background:#fff}
+.main-card{
+  display:grid;grid-template-columns:1fr;gap:32px;align-items:center;
+  border:3px solid var(--orange);border-radius:24px;padding:28px;background:#fff;
+  box-shadow:0 18px 50px rgba(26,43,94,.10);position:relative;
+}
+.main-card .tag{
+  position:absolute;top:-15px;left:28px;background:var(--orange);color:#fff;
+  font-family:var(--f-head);font-weight:800;font-size:.78rem;padding:6px 14px;border-radius:30px;
+}
+@media (min-width:860px){.main-card{grid-template-columns:320px 1fr;padding:40px}}
+.main-card .media img{width:100%;max-width:420px;height:auto;border-radius:18px;margin:0 auto;box-shadow:0 18px 40px rgba(26,43,94,.25)}
+.single-mock{height:320px;align-items:center;justify-content:center}
+.single-mock .bk-main{position:relative}
+.mc-icon{font-size:2.2rem;line-height:1}
+.main-card h3{font-size:clamp(1.3rem,2.6vw,1.65rem);color:var(--navy);font-weight:800;margin:10px 0 12px}
+.main-card h3 span{display:block;font-size:.95rem;font-weight:700;color:var(--blue);margin-top:6px}
+.main-card p{color:var(--muted)}
+.levels{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.levels li{
+  display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:12px;background:var(--bg);
+  font-size:.95rem;
+}
+.levels .badge{
+  flex:none;font-family:var(--f-head);font-weight:800;font-size:.74rem;color:#fff;padding:4px 10px;border-radius:20px;margin-top:2px;
+}
+.lv1 .badge{background:#18A058}.lv2 .badge{background:var(--blue)}.lv3 .badge{background:var(--orange)}
+.levels strong{color:var(--navy)}
+
+.features{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:40px}
+@media (min-width:860px){.features{grid-template-columns:repeat(4,1fr)}}
+.feat{
+  background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:18px 14px;text-align:center;
+  font-family:var(--f-head);font-weight:700;font-size:.92rem;color:var(--navy);
+}
+.feat span{display:block;font-size:1.8rem;margin-bottom:6px}
+
+/* ===== Sección 3 ===== */
+.s-porque{background:var(--bg)}
+.why{display:grid;grid-template-columns:1fr;gap:20px}
+@media (min-width:640px){.why{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:960px){.why{grid-template-columns:repeat(3,1fr)}}
+.why-item{background:#fff;border-radius:20px;padding:30px 26px;border-top:4px solid var(--blue);box-shadow:0 6px 24px rgba(26,43,94,.06)}
+.why-item:nth-child(2n){border-top-color:var(--orange)}
+.why-item:nth-child(3n){border-top-color:var(--yellow)}
+.why-ico{font-size:2.6rem;line-height:1;margin-bottom:14px}
+.why-item h3{font-size:1.15rem;color:var(--navy);font-weight:800;margin-bottom:8px}
+.why-item p{color:var(--muted);font-size:.97rem}
+
+/* ===== Sección 4 ===== */
+.s-bonos{background:linear-gradient(170deg,#1A2B5E 0%,#14244f 100%);color:#fff}
+.s-bonos .sec-title{color:#fff}
+.s-bonos .sec-sub{color:var(--yellow);font-weight:600}
+.bonos{display:grid;grid-template-columns:1fr;gap:24px}
+@media (min-width:900px){.bonos{grid-template-columns:repeat(3,1fr)}}
+.bono{background:#fff;color:var(--ink);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.bono-img{background:linear-gradient(160deg,#EAF0FB,#dbe5f7);position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.bono-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.bono:hover .bono-img img{transform:scale(1.04)}
+.bono-img .fallback{width:100%;align-items:center;justify-content:center}
+.bono-img .bk{position:relative;width:140px;height:196px}
+.bono .badge-x{
+  position:absolute;top:14px;left:14px;background:var(--orange);color:#fff;font-family:var(--f-head);
+  font-weight:800;font-size:.72rem;padding:5px 12px;border-radius:20px;z-index:5;
+}
+.bono-body{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
+.bono h3{font-size:1.18rem;font-weight:800;color:var(--navy)}
+.bono h3 span{display:block;font-size:.85rem;color:var(--blue);font-weight:700;margin-top:4px}
+.bono p{color:var(--muted);font-size:.95rem;margin-top:12px;flex:1}
+.bono-val{margin-top:18px;padding-top:16px;border-top:1px dashed var(--line);display:flex;align-items:baseline;gap:10px;font-family:var(--f-head);font-weight:800}
+.bono-val s{color:var(--red);font-size:1rem}
+.bono-val b{color:var(--green);font-size:1.3rem}
+.bono-val em{font-style:normal;font-size:.82rem;color:var(--muted);font-weight:600}
+
+/* ===== Sección 5 — Oferta ===== */
+.s-oferta{background:linear-gradient(160deg,#FF6B2B 0%,#C0392B 100%);color:#fff;text-align:center}
+.of-title{font-size:clamp(1.8rem,5vw,3rem);font-weight:900;color:#fff}
+.timer{display:flex;justify-content:center;align-items:center;gap:10px;margin:28px 0 12px}
+.t-digit{
+  width:64px;height:80px;display:flex;align-items:center;justify-content:center;
+  border:3px solid #fff;border-radius:16px;background:rgba(0,0,0,.16);
+  font-family:var(--f-head);font-weight:900;font-size:2.6rem;font-variant-numeric:tabular-nums;
+}
+.t-sep{font-family:var(--f-head);font-weight:900;font-size:2.4rem;padding:0 4px}
+.t-labels{display:flex;justify-content:center;gap:120px;font-size:.78rem;font-weight:700;opacity:.85;margin-bottom:8px}
+.t-note{font-size:.95rem;opacity:.95}
+@media (max-width:400px){.t-digit{width:52px;height:68px;font-size:2.1rem}.t-labels{gap:96px}}
+
+.plans{display:grid;grid-template-columns:1fr;gap:26px;max-width:1000px;margin:40px auto 0;align-items:start}
+@media (min-width:860px){.plans{grid-template-columns:1fr 1fr;align-items:stretch}}
+@media (max-width:859px){.plan-full{order:-1}}
+.plan{
+  position:relative;background:#fff;color:var(--ink);border-radius:26px;padding:26px 26px 28px;text-align:left;
+  display:flex;flex-direction:column;box-shadow:0 24px 60px rgba(70,10,0,.35);
+}
+.plan-full{border:4px solid var(--yellow);box-shadow:0 30px 80px rgba(70,10,0,.5), 0 0 0 6px rgba(255,184,0,.25)}
+@media (min-width:860px){.plan-full{transform:translateY(-10px)}}
+.ribbon{
+  position:absolute;top:-17px;left:50%;transform:translateX(-50%);white-space:nowrap;z-index:2;
+  background:var(--yellow);color:var(--navy);font-family:var(--f-head);font-weight:900;font-size:.82rem;
+  padding:7px 18px;border-radius:30px;box-shadow:0 6px 16px rgba(0,0,0,.2);
+}
+.plan-img img{width:100%;max-width:300px;height:auto;margin:0 auto;border-radius:16px;box-shadow:0 12px 30px rgba(26,43,94,.22)}
+.plan h3{text-align:center;font-size:1.45rem;font-weight:900;color:var(--navy);margin-top:20px}
+.plan-desc{text-align:center;color:var(--muted);font-size:.95rem;margin-top:4px}
+.plan .inc{flex:1}
+.plan-basic .price .now{color:var(--navy)}
+.plan-note{color:var(--muted);font-size:.9rem;margin-top:6px}
+.plan .btn{width:100%;margin-top:20px;font-size:1.05rem;padding:19px 16px}
+.btn-ghost{background:#fff;color:var(--navy);border:3px solid var(--navy);box-shadow:none}
+.btn-ghost:hover{background:var(--navy);color:#fff;box-shadow:0 10px 26px rgba(26,43,94,.3)}
+.secure-all{text-align:center;color:#fff;font-size:.92rem;margin-top:26px;opacity:.95}
+.inc{list-style:none;padding:0;margin:24px 0}
+.inc li{display:flex;gap:12px;align-items:flex-start;padding:9px 0;border-bottom:1px solid var(--line);font-size:.98rem}
+.inc li:last-child{border-bottom:0}
+.inc svg{flex:none;color:var(--green);margin-top:3px}
+.inc li.no{color:#a3a9b8;text-decoration:line-through}
+.inc li.no svg{color:#c9cfdb}
+.inc strong{color:var(--navy)}
+.price{text-align:center}
+.price s{display:block;color:#8a90a3;font-size:1.15rem;font-weight:600}
+.price .now{display:block;font-family:var(--f-head);font-weight:900;color:var(--orange);font-size:clamp(3rem,10vw,4.2rem);line-height:1.05;margin-top:4px}
+.price .now small{font-size:1.2rem;font-weight:800}
+.urg{color:var(--red);font-weight:700;margin-top:10px;font-size:.98rem}
+
+/* ===== Sección 6 — Carrusel ===== */
+.s-muestra{background:var(--bg)}
+.carousel{position:relative;max-width:520px;margin:0 auto}
+.car-viewport{overflow:hidden;border-radius:18px;touch-action:pan-y}
+.car-track{display:flex;transition:transform .5s cubic-bezier(.22,.7,.2,1)}
+.slide{flex:0 0 100%;padding:12px 18px 28px;display:flex;flex-direction:column;align-items:center}
+.slide-cap{margin-top:16px;font-family:var(--f-head);font-weight:700;font-size:.92rem;color:var(--navy);text-align:center}
+.car-btn{
+  position:absolute;top:calc(50% - 30px);transform:translateY(-50%);z-index:3;
+  width:48px;height:48px;border-radius:50%;border:0;cursor:pointer;
+  background:var(--orange);color:#fff;display:flex;align-items:center;justify-content:center;padding:0;box-shadow:0 8px 20px rgba(255,107,43,.4);
+  transition:transform .2s ease;
+}
+.car-btn:hover{transform:translateY(-50%) scale(1.08)}
+.car-prev{left:-8px}.car-next{right:-8px}
+@media (min-width:700px){.car-prev{left:-64px}.car-next{right:-64px}}
+.dots{display:flex;justify-content:center;gap:10px;margin-top:6px}
+.dot{width:11px;height:11px;border-radius:50%;border:0;padding:0;background:#c7d0e3;cursor:pointer;transition:width .25s ease,background .25s ease}
+.dot[aria-current="true"]{background:var(--orange);width:28px;border-radius:8px}
+
+/* Páginas reales de la guía */
+.page-img{width:100%;max-width:380px;height:auto;border-radius:6px;background:#fff;
+  box-shadow:0 2px 0 #e9edf5, 0 4px 0 #dfe5f0, 0 24px 44px rgba(26,43,94,.18);user-select:none;-webkit-user-drag:none}
+
+/* ===== Sección 8 — Garantía ===== */
+.s-garantia{background:linear-gradient(170deg,#1A2B5E,#14244f);color:#fff;text-align:center}
+.seal{width:clamp(170px,40vw,220px);height:auto;margin:0 auto;filter:drop-shadow(0 14px 34px rgba(255,184,0,.35))}
+.s-garantia h2{font-size:clamp(1.7rem,4.4vw,2.5rem);font-weight:900;margin:22px 0 16px}
+.s-garantia p{max-width:44rem;margin:0 auto;color:rgba(255,255,255,.9);font-size:1.05rem}
+.g-badge{display:inline-block;margin-top:30px;border:2px solid var(--yellow);color:var(--yellow);border-radius:12px;padding:12px 22px;font-family:var(--f-head);font-weight:800;font-size:.92rem;letter-spacing:.06em}
+
+/* ===== Sección 9 — FAQ ===== */
+.s-faq{background:var(--bg)}
+.faq{max-width:780px;margin:0 auto;display:grid;gap:12px}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.faq-q{
+  width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;
+  background:none;border:0;cursor:pointer;padding:20px 22px;font-family:var(--f-head);font-weight:700;font-size:1rem;color:var(--navy);
+}
+.faq-q .pm{flex:none;width:30px;height:30px;border-radius:50%;background:#FFEDE5;color:var(--orange);display:flex;align-items:center;justify-content:center;transition:transform .3s ease,background .3s ease}
+.faq-q[aria-expanded="true"] .pm{transform:rotate(45deg);background:var(--orange);color:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a p{padding:0 22px 22px;color:var(--muted)}
+
+/* ===== Final CTA ===== */
+.final-cta{text-align:center;margin-top:44px}
+
+/* ===== Footer ===== */
+.footer{background:#0D1B3E;color:rgba(255,255,255,.6);text-align:center;padding:44px 0 calc(44px + env(safe-area-inset-bottom,0px));font-size:.9rem}
+.brand{font-family:var(--f-head);font-weight:900;font-size:1.35rem;color:#fff}
+.brand span{color:var(--orange)}
+.footer hr{border:0;border-top:1px solid rgba(255,255,255,.12);max-width:420px;margin:20px auto}
+.footer nav{margin-top:10px;display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.footer nav a{text-decoration:none;color:rgba(255,255,255,.6)}
+.footer nav a:hover{color:#fff}
+.hash{margin-top:14px;color:var(--yellow);font-weight:600}
+
+/* ===== WhatsApp ===== */
+.wa{
+  position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:90;
+  width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;font-size:2rem;
+  display:flex;align-items:center;justify-content:center;text-decoration:none;
+  box-shadow:0 10px 26px rgba(37,211,102,.45);transition:transform .2s ease;
+}
+.wa:hover{transform:scale(1.08)}
+
+/* ===== Animaciones de entrada ===== */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  .bono-img img{transition:none}
+  .bono:hover .bono-img img{transform:none}
+  html{scroll-behavior:auto}
+  .hero-media{animation:none}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .car-track,.faq-a,.btn,.dot{transition:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== BARRA DE URGENCIA ===== -->
+<div class="topbar" role="region" aria-label="Oferta especial">
+  <span><span class="tb-long">🔥 OFERTA ESPECIAL: 100 proyectos de robótica desde solo $5</span><span class="tb-short">🔥 Desde solo $5</span></span>
+  <a href="#oferta">ACCEDER AHORA</a>
+</div>
+
+<!-- ===== SECCIÓN 1 — HERO ===== -->
+<header class="hero">
+  <canvas id="hero-fx" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <h1>Transforma a tu hijo en un pequeño inventor con <span class="hl">100 proyectos de robótica</span> paso a paso</h1>
+    <h2>La guía definitiva para que niños de 6 a 12 años construyan robots, máquinas e inventos usando materiales caseros y tecnología accesible — sin necesidad de experiencia previa.</h2>
+
+    <div class="hero-media media">
+      <img src="/img/hero-combo.webp" width="1200" height="630" fetchpriority="high" decoding="async" alt="Combo: 100 Proyectos de Robótica para Niños más 3 bonos exclusivos" onerror="this.parentNode.classList.add('missing')">
+      <div class="fallback combo-mock" aria-hidden="true">
+        <div class="bk bk-1"><small>BONO 1</small><span class="bk-emoji">🏅</span><b>Diario del Pequeño Inventor</b></div>
+        <div class="bk bk-main"><small>GUÍA PREMIUM · 118 PÁGS</small><span class="bk-emoji">🤖</span><b>100 Proyectos de Robótica para Niños</b></div>
+        <div class="bk bk-2"><small>BONO 3</small><span class="bk-emoji">🧩</span><b>Retos de Programación sin Pantalla</b></div>
+      </div>
+    </div>
+
+    <a href="#oferta" class="btn">🚀 QUIERO ACCEDER AHORA</a>
+    <p class="proof">⭐⭐⭐⭐⭐ +1.200 familias ya están construyendo robots en casa</p>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== SECCIÓN 2 — QUÉ VAS A RECIBIR ===== -->
+<section class="sec s-recibes">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 class="sec-title">¿Qué recibes cuando te unes hoy?</h2>
+    </div>
+
+    <article class="main-card reveal">
+      <span class="tag">PRODUCTO PRINCIPAL</span>
+      <div class="media">
+        <img src="/img/producto-principal.webp" width="720" height="720" loading="lazy" decoding="async" alt="Guía 100 Proyectos de Robótica para Niños" onerror="this.parentNode.classList.add('missing')">
+        <div class="fallback single-mock" aria-hidden="true">
+          <div class="bk bk-main"><small>GUÍA PREMIUM · 118 PÁGS</small><span class="bk-emoji">🤖</span><b>100 Proyectos de Robótica para Niños</b></div>
+        </div>
+      </div>
+      <div>
+        <div class="mc-icon">📚</div>
+        <h3>100 Proyectos de Robótica para Niños<span>Guía Premium paso a paso (118 páginas)</span></h3>
+        <p>Guía completa con 100 proyectos organizados en 3 niveles de dificultad. Cada proyecto incluye lista de materiales, instrucciones paso a paso, lo que aprende el niño y un desafío extra. Desde robots de cartón hasta proyectos con Arduino.</p>
+        <ul class="levels">
+          <li class="lv1"><span class="badge">🟢 Nivel 1</span><span><strong>Iniciadores (6–8 años):</strong> 35 proyectos con materiales reciclables</span></li>
+          <li class="lv2"><span class="badge">🔵 Nivel 2</span><span><strong>Exploradores (9–10 años):</strong> 35 proyectos con electrónica básica</span></li>
+          <li class="lv3"><span class="badge">🟠 Nivel 3</span><span><strong>Inventores (11–12 años):</strong> 30 proyectos con Arduino y micro:bit</span></li>
+        </ul>
+      </div>
+    </article>
+
+    <div class="features reveal">
+      <div class="feat"><span>🗂️</span>118 páginas de contenido</div>
+      <div class="feat"><span>✅</span>100 proyectos completos</div>
+      <div class="feat"><span>🌎</span>Español latinoamericano</div>
+      <div class="feat"><span>📱</span>Optimizado para celular</div>
+      <div class="feat"><span>🔧</span>Materiales accesibles</div>
+      <div class="feat"><span>🎓</span>Sin experiencia previa</div>
+      <div class="feat"><span>⚡</span>Acceso inmediato</div>
+      <div class="feat"><span>🖨️</span>Listo para imprimir</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECCIÓN 3 — POR QUÉ ELEGIRNOS ===== -->
+<section class="sec s-porque">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 class="sec-title">¿Por qué cientos de familias eligen este material?</h2>
+    </div>
+    <div class="why">
+      <div class="why-item reveal"><div class="why-ico">🎯</div><h3>Proyectos que realmente funcionan</h3><p>Cada proyecto fue diseñado para funcionar a la primera. Instrucciones claras, materiales simples y resultados garantizados.</p></div>
+      <div class="why-item reveal"><div class="why-ico">💰</div><h3>Sin gastar una fortuna</h3><p>El 70% de los proyectos usa materiales que ya tienes en casa: cajas, tapas, palitos y pilas. Robótica accesible para cualquier familia.</p></div>
+      <div class="why-item reveal"><div class="why-ico">🧠</div><h3>Desarrolla habilidades del futuro</h3><p>Pensamiento computacional, resolución de problemas, creatividad y trabajo en equipo — las habilidades más demandadas del siglo XXI.</p></div>
+      <div class="why-item reveal"><div class="why-ico">👨‍👩‍👧</div><h3>Momentos en familia</h3><p>Diseñado para que padres e hijos construyan juntos. Crea recuerdos mientras aprenden tecnología.</p></div>
+      <div class="why-item reveal"><div class="why-ico">📈</div><h3>Progresión inteligente</h3><p>El nivel sube gradualmente. Tu hijo empieza con cartón y termina programando con Arduino — sin frustraciones.</p></div>
+      <div class="why-item reveal"><div class="why-ico">⚡</div><h3>Aplicación inmediata</h3><p>Sin teoría aburrida. Cada proyecto es 100% práctico. Abres la guía y empiezas a construir hoy mismo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECCIÓN 4 — BONOS ===== -->
+<section class="sec s-bonos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 class="sec-title">Con el Plan Completo recibes estos 3 bonos exclusivos</h2>
+      <p class="sec-sub">Valorados en más de $30 — incluidos en el Plan Completo</p>
+    </div>
+    <div class="bonos">
+      <article class="bono reveal">
+        <div class="bono-img media">
+          <span class="badge-x">BONO EXCLUSIVO</span>
+          <img src="/img/bono-diario.webp" width="720" height="720" loading="lazy" decoding="async" alt="Diario del Pequeño Inventor" onerror="this.parentNode.classList.add('missing')">
+          <div class="fallback" aria-hidden="true"><div class="bk bk-1" style="transform:rotate(-3deg)"><small>BONO 1</small><span class="bk-emoji">🏅</span><b>Diario del Pequeño Inventor</b></div></div>
+        </div>
+        <div class="bono-body">
+          <h3>Diario del Pequeño Inventor<span>14 páginas imprimibles</span></h3>
+          <p>Tablero de los 100 proyectos para colorear, fichas de registro de inventos, medallas recortables y certificados de inventor. La herramienta perfecta para mantener a tu hijo motivado de principio a fin.</p>
+          <div class="bono-val"><em>Valor:</em><s>$9.90</s><b>GRATIS</b></div>
+        </div>
+      </article>
+
+      <article class="bono reveal">
+        <div class="bono-img media">
+          <span class="badge-x">BONO EXCLUSIVO</span>
+          <img src="/img/bono-materiales.webp" width="720" height="720" loading="lazy" decoding="async" alt="Guía de Materiales Caseros y Sustituciones" onerror="this.parentNode.classList.add('missing')">
+          <div class="fallback" aria-hidden="true"><div class="bk bk-2" style="transform:rotate(2deg)"><small>BONO 2</small><span class="bk-emoji">📦</span><b>Guía de Materiales Caseros y Sustituciones</b></div></div>
+        </div>
+        <div class="bono-body">
+          <h3>Guía de Materiales Caseros y Sustituciones<span>20 páginas</span></h3>
+          <p>¿No tienes el material exacto? Sin problema. Esta guía te dice con qué reemplazarlo, cómo organizar tu “Caja del Inventor” y dónde conseguir todo gratis o muy barato.</p>
+          <div class="bono-val"><em>Valor:</em><s>$9.90</s><b>GRATIS</b></div>
+        </div>
+      </article>
+
+      <article class="bono reveal">
+        <div class="bono-img media">
+          <span class="badge-x">BONO EXCLUSIVO</span>
+          <img src="/img/bono-retos.webp" width="720" height="720" loading="lazy" decoding="async" alt="Retos de Programación sin Pantalla" onerror="this.parentNode.classList.add('missing')">
+          <div class="fallback" aria-hidden="true"><div class="bk" style="background:linear-gradient(160deg,#FF6B2B,#d14e17);transform:rotate(-2deg)"><small>BONO 3</small><span class="bk-emoji">🧩</span><b>Retos de Programación sin Pantalla</b></div></div>
+        </div>
+        <div class="bono-body">
+          <h3>Retos de Programación sin Pantalla<span>33 páginas</span></h3>
+          <p>30 desafíos de pensamiento computacional usando solo papel, flechas y lápiz. Enseña a tu hijo a pensar como programador antes de tocar una sola pantalla.</p>
+          <div class="bono-val"><em>Valor:</em><s>$12.90</s><b>GRATIS</b></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECCIÓN 5 — OFERTA ===== -->
+<section class="sec s-oferta" id="oferta">
+  <div class="wrap">
+    <h2 class="of-title">⚡ OFERTA POR TIEMPO LIMITADO</h2>
+
+    <div class="timer" role="timer" aria-live="off" aria-label="Tiempo restante de la oferta">
+      <span class="t-digit">1</span><span class="t-digit">5</span>
+      <span class="t-sep">:</span>
+      <span class="t-digit">0</span><span class="t-digit">0</span>
+    </div>
+    <div class="t-labels" aria-hidden="true"><span>MINUTOS</span><span>SEGUNDOS</span></div>
+    <p class="t-note">Esta oferta especial expira cuando el contador llegue a cero</p>
+
+    <div class="plans">
+      <article class="plan plan-basic">
+        <div class="plan-img"><img src="/img/plan-basico.webp" width="640" height="640" alt="Plan Básico: guía 100 Proyectos de Robótica para Niños" loading="lazy" decoding="async"></div>
+        <h3>Plan Básico</h3>
+        <p class="plan-desc">Solo la guía principal</p>
+        <ul class="inc">
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>100 Proyectos de Robótica para Niños</strong> (Guía Premium)</span></li>
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Acceso inmediato tras la compra</span></li>
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Compatible con celular, tablet y computadora</span></li>
+        <li class="no"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg><span>Diario del Pequeño Inventor</span></li>
+        <li class="no"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg><span>Guía de Materiales Caseros y Sustituciones</span></li>
+        <li class="no"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg><span>Retos de Programación sin Pantalla</span></li>
+        </ul>
+        <div class="price">
+          <span class="now">$5.00 <small>USD</small></span>
+          <p class="plan-note">Pago único</p>
+        </div>
+        <a href="https://pay.hotmart.com/X107932772K?off=g7hcfb0o" class="btn btn-ghost btn-ic" data-checkout="basico">QUIERO EL PLAN BÁSICO</a>
+      </article>
+
+      <article class="plan plan-full">
+        <span class="ribbon">⭐ RECOMENDADO</span>
+        <div class="plan-img"><img src="/img/plan-completo.webp" width="640" height="640" alt="Plan Completo: guía principal más 3 bonos exclusivos" loading="lazy" decoding="async"></div>
+        <h3>Plan Completo</h3>
+        <p class="plan-desc">Guía principal + 3 bonos exclusivos</p>
+        <ul class="inc">
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>100 Proyectos de Robótica para Niños</strong> (Guía Premium)</span></li>
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>BONO:</strong> Diario del Pequeño Inventor</span></li>
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>BONO:</strong> Guía de Materiales Caseros y Sustituciones</span></li>
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>BONO:</strong> Retos de Programación sin Pantalla</span></li>
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Acceso inmediato tras la compra</span></li>
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Compatible con celular, tablet y computadora</span></li>
+        </ul>
+        <div class="price">
+          <s>De $37.90</s>
+          <span class="now">$15.00 <small>USD</small></span>
+          <p class="urg">🔥 Solo por hoy — Precio especial de lanzamiento</p>
+        </div>
+        <a href="https://pay.hotmart.com/U107932821M?off=6ty2o0z5" class="btn btn-ic" data-checkout="completo">💳 QUIERO EL PLAN COMPLETO</a>
+      </article>
+    </div>
+    <p class="secure-all">🔒 Pago 100% seguro · Acceso inmediato · Garantía de 7 días en ambos planes</p>
+  </div>
+</section>
+
+<!-- ===== SECCIÓN 6 — CARRUSEL ===== -->
+<section class="sec s-muestra">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 class="sec-title">Mira cómo es el material por dentro</h2>
+      <p class="sec-sub">Cada proyecto ocupa una página completa, fácil de seguir paso a paso</p>
+    </div>
+
+    <div class="carousel reveal" aria-roledescription="carrusel" aria-label="Páginas de muestra del material">
+      <button class="car-btn car-prev" aria-label="Página anterior"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <div class="car-viewport">
+        <div class="car-track">
+          <div class="slide" role="group" aria-roledescription="slide" aria-label="1 de 10">
+            <img class="page-img" src="/img/pagina-01-portada.webp" width="560" height="792" alt="Portada de la guía 100 Proyectos de Robótica para Niños" decoding="async">
+            <p class="slide-cap">Portada — 100 Proyectos de Robótica para Niños</p>
+          </div>
+
+          <div class="slide" role="group" aria-roledescription="slide" aria-label="2 de 10">
+            <img class="page-img" src="/img/pagina-02-proyecto-01.webp" width="560" height="792" alt="Ficha del proyecto 01: Robot de cartón con ruedas" decoding="async" loading="lazy">
+            <p class="slide-cap">Proyecto 01 — Robot de cartón con ruedas (Nivel 1)</p>
+          </div>
+
+          <div class="slide" role="group" aria-roledescription="slide" aria-label="3 de 10">
+            <img class="page-img" src="/img/pagina-03-nivel-2.webp" width="560" height="792" alt="Apertura del Nivel 2: Exploradores, proyectos 36 al 70" decoding="async" loading="lazy">
+            <p class="slide-cap">Apertura del Nivel 2 — Exploradores</p>
+          </div>
+
+          <div class="slide" role="group" aria-roledescription="slide" aria-label="4 de 10">
+            <img class="page-img" src="/img/pagina-04-proyecto-46.webp" width="560" height="792" alt="Ficha del proyecto 46: Brazo con servomotor" decoding="async" loading="lazy">
+            <p class="slide-cap">Proyecto 46 — Brazo con servomotor (Nivel 2)</p>
+          </div>
+
+          <div class="slide" role="group" aria-roledescription="slide" aria-label="5 de 10">
+            <img class="page-img" src="/img/pagina-05-proyecto-71.webp" width="560" height="792" alt="Ficha del proyecto 71: Semáforo con Arduino" decoding="async" loading="lazy">
+            <p class="slide-cap">Proyecto 71 — Semáforo con Arduino (Nivel 3)</p>
+          </div>
+
+          <div class="slide" role="group" aria-roledescription="slide" aria-label="6 de 10">
+            <img class="page-img" src="/img/pagina-06-nivel-3.webp" width="560" height="792" alt="Apertura del Nivel 3: Inventores, proyectos 71 al 100" decoding="async" loading="lazy">
+            <p class="slide-cap">Apertura del Nivel 3 — Inventores</p>
+          </div>
+
+          <div class="slide" role="group" aria-roledescription="slide" aria-label="7 de 10">
+            <img class="page-img" src="/img/pagina-07-proyecto-82.webp" width="560" height="792" alt="Ficha del proyecto 82: Alarma de temperatura con LED RGB" decoding="async" loading="lazy">
+            <p class="slide-cap">Proyecto 82 — Alarma de temperatura con LED RGB (Nivel 3)</p>
+          </div>
+
+          <div class="slide" role="group" aria-roledescription="slide" aria-label="8 de 10">
+            <img class="page-img" src="/img/pagina-08-proyecto-84.webp" width="560" height="792" alt="Ficha del proyecto 84: Carro 4WD con joystick" decoding="async" loading="lazy">
+            <p class="slide-cap">Proyecto 84 — Carro 4WD con joystick (Nivel 3)</p>
+          </div>
+
+          <div class="slide" role="group" aria-roledescription="slide" aria-label="9 de 10">
+            <img class="page-img" src="/img/pagina-09-proyecto-99.webp" width="560" height="792" alt="Ficha del proyecto 99: Estación de monitoreo ambiental con IoT" decoding="async" loading="lazy">
+            <p class="slide-cap">Proyecto 99 — Estación de monitoreo ambiental con IoT (Nivel 3)</p>
+          </div>
+
+          <div class="slide" role="group" aria-roledescription="slide" aria-label="10 de 10">
+            <img class="page-img" src="/img/pagina-10-apendice-arduino.webp" width="560" height="792" alt="Apéndice 2: Guía rápida de Arduino" decoding="async" loading="lazy">
+            <p class="slide-cap">Apéndice 2 — Guía rápida de Arduino</p>
+          </div>
+        </div>
+      </div>
+      <button class="car-btn car-next" aria-label="Página siguiente"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+      <div class="dots" role="tablist" aria-label="Elegir página"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECCIÓN 8 — GARANTÍA ===== -->
+<section class="sec s-garantia">
+  <div class="wrap reveal">
+    <img class="seal" src="/img/sello-garantia.webp" width="440" height="440" alt="Sello de garantía de 7 días" loading="lazy" decoding="async">
+    <h2>Garantía Incondicional de 7 Días</h2>
+    <p>Si en los próximos 7 días no quedas completamente satisfecho con el material, te devolvemos el 100% de tu dinero. Sin preguntas, sin burocracia, sin complicaciones. Tienes 7 días para explorar todo el contenido con total tranquilidad. Si no supera tus expectativas, solo escríbenos y listo — devolución garantizada.</p>
+    <div class="g-badge">RIESGO CERO · GARANTÍA TOTAL · 7 DÍAS</div>
+  </div>
+</section>
+
+<!-- ===== SECCIÓN 9 — FAQ ===== -->
+<section class="sec s-faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 class="sec-title">Preguntas Frecuentes</h2>
+    </div>
+    <div class="faq reveal">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa1">¿Necesito experiencia previa en robótica para usar este material?<span class="pm"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a" id="fa1" role="region"><p>No, para nada. El material está diseñado específicamente para familias y educadores sin experiencia previa. Los proyectos del Nivel 1 usan solo materiales reciclables como cajas y palitos — no necesitas saber nada de electrónica para empezar. El aprendizaje es progresivo.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa2">¿Cómo recibo el material después de comprar?<span class="pm"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a" id="fa2" role="region"><p>Inmediatamente después de confirmar tu compra recibirás un correo electrónico con el acceso a todo el material. El acceso es instantáneo, las 24 horas, los 7 días de la semana. Puedes usarlo desde tu celular, tablet o computadora.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa3">¿Los proyectos de Arduino son muy complicados? ¿Necesito comprar muchas cosas?<span class="pm"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a" id="fa3" role="region"><p>Los proyectos de Arduino corresponden al Nivel 3 (11–12 años) y representan solo el 30% del material. El 70% de los proyectos usa materiales que ya tienes en casa. Un Arduino Uno básico cuesta entre $5 y $10 USD en plataformas como Mercado Libre, AliExpress o Amazon. La Guía de Materiales Caseros (incluida como bono) también te indica alternativas económicas.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa4">¿El material funciona para usar en el salón de clases?<span class="pm"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a" id="fa4" role="region"><p>Completamente. Muchos de nuestros compradores son docentes de primaria que usan el material en sus clases de ciencias o tecnología. Cada proyecto incluye el objetivo pedagógico (“¿Qué aprende el niño?”), lo que lo hace perfecto para planificación de clases. Puedes imprimir las fichas de proyecto para distribuirlas entre los estudiantes.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa5">¿Puedo imprimir el material?<span class="pm"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a" id="fa5" role="region"><p>Sí, todo el material está diseñado para impresión profesional en tamaño A4. El Diario del Pequeño Inventor está especialmente pensado para imprimirse — tiene fichas de proyecto, el tablero de los 100 proyectos y las medallas recortables. Puedes imprimirlo en casa o en cualquier copistería.</p></div>
+      </div>
+    </div>
+
+    <div class="final-cta reveal">
+      <a href="#oferta" class="btn">🚀 QUIERO ACCEDER AHORA</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SECCIÓN 10 — RODAPÉ ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="brand">Robótica<span>Para</span>Niños 🤖</div>
+    <hr>
+    <p>© 2026 Luis Hernández. Todos los derechos reservados.</p>
+    <nav aria-label="Enlaces legales">
+      <a href="#">Política de Privacidad</a><span>·</span>
+      <a href="#">Términos de Uso</a><span>·</span>
+      <a href="#">Contacto</a>
+    </nav>
+    <p class="hash">#RobóticaParaNiños</p>
+  </div>
+</footer>
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/" class="wa" data-whatsapp target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><g transform="translate(7.2 6.8) scale(.42)" fill="#fff" stroke="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></g></svg></a>
+
+<script>
+(function () {
+  /* =========================================================
+     CONFIGURAÇÃO — troque só estas linhas
+     CHECKOUT_BASICO:   link de checkout do Plano Básico ($5)
+     CHECKOUT_COMPLETO: link de checkout do Plano Completo
+     WHATSAPP_URL:      ex. https://wa.me/5219999999999
+     ========================================================= */
+  var CHECKOUT_BASICO = 'https://pay.hotmart.com/X107932772K?off=g7hcfb0o';
+  var CHECKOUT_COMPLETO = 'https://pay.hotmart.com/U107932821M?off=6ty2o0z5';
+  var WHATSAPP_URL = 'https://wa.me/';
+
+  document.querySelectorAll('[data-checkout="basico"]').forEach(function (a) { a.href = CHECKOUT_BASICO; });
+  document.querySelectorAll('[data-checkout="completo"]').forEach(function (a) { a.href = CHECKOUT_COMPLETO; });
+  document.querySelectorAll('[data-whatsapp]').forEach(function (a) { a.href = WHATSAPP_URL; });
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ----- Altura da barra fixa ----- */
+  var bar = document.querySelector('.topbar');
+  function setBar() { document.documentElement.style.setProperty('--bar-h', bar.offsetHeight + 'px'); }
+  setBar();
+  window.addEventListener('resize', setBar);
+
+  /* ----- Pontos luminosos do hero (grade tipo planta técnica) ----- */
+  var cv = document.getElementById('hero-fx');
+  if (cv && cv.getContext) {
+    var ctx = cv.getContext('2d'), nodes = [], G = 48, W = 0, H = 0, visible = true;
+    function sizeFx() {
+      var r = cv.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio || 1, 2);
+      W = r.width; H = r.height;
+      cv.width = W * dpr; cv.height = H * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      nodes = [];
+      for (var x = G; x < W; x += G) {
+        for (var y = G; y < H; y += G) {
+          if (Math.random() < 0.16) nodes.push({ x: x, y: y, p: Math.random() * 6.28, s: 0.5 + Math.random() * 1.1, c: Math.random() < 0.35 ? '255,184,0' : '140,180,255' });
+        }
+      }
+      if (reduce) drawFx(0);
+    }
+    function drawFx(t) {
+      ctx.clearRect(0, 0, W, H);
+      for (var i = 0; i < nodes.length; i++) {
+        var n = nodes[i];
+        var a = reduce ? 0.35 : 0.08 + 0.6 * (0.5 + 0.5 * Math.sin(t / 1000 * n.s + n.p));
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, 1.8, 0, 6.283);
+        ctx.fillStyle = 'rgba(' + n.c + ',' + a.toFixed(3) + ')';
+        ctx.shadowColor = 'rgba(' + n.c + ',' + a.toFixed(3) + ')';
+        ctx.shadowBlur = 8;
+        ctx.fill();
+      }
+    }
+    function loop(t) { if (visible) drawFx(t); requestAnimationFrame(loop); }
+    sizeFx();
+    window.addEventListener('resize', sizeFx);
+    if (!reduce) {
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (e) { visible = e[0].isIntersecting; }).observe(cv);
+      }
+      requestAnimationFrame(loop);
+    }
+  }
+
+  /* ----- Cronômetro de 15 minutos (reinicia ao chegar a zero) ----- */
+  var DUR = 15 * 60 * 1000, end = Date.now() + DUR;
+  var digits = document.querySelectorAll('.t-digit');
+  function tick() {
+    var left = Math.ceil((end - Date.now()) / 1000);
+    if (left <= 0) { end = Date.now() + DUR; left = DUR / 1000; }
+    var m = Math.floor(left / 60), s = left % 60;
+    var str = (m < 10 ? '0' : '') + m + (s < 10 ? '0' : '') + s;
+    for (var i = 0; i < digits.length; i++) digits[i].textContent = str.charAt(i);
+  }
+  tick();
+  setInterval(tick, 1000);
+
+
+  /* ----- Carrossel ----- */
+  var track = document.querySelector('.car-track');
+  var slides = track.children, n = slides.length, idx = 0, timer = null;
+  var dotsWrap = document.querySelector('.dots');
+  for (var d = 0; d < n; d++) {
+    var b = document.createElement('button');
+    b.className = 'dot';
+    b.setAttribute('role', 'tab');
+    b.setAttribute('aria-label', 'Ir a la página ' + (d + 1));
+    b.dataset.i = d;
+    dotsWrap.appendChild(b);
+  }
+  var dots = dotsWrap.querySelectorAll('.dot');
+  function go(i) {
+    idx = (i + n) % n;
+    track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+    for (var j = 0; j < n; j++) {
+      dots[j].setAttribute('aria-current', j === idx ? 'true' : 'false');
+      slides[j].setAttribute('aria-hidden', j === idx ? 'false' : 'true');
+    }
+  }
+  function play() { stop(); timer = setInterval(function () { go(idx + 1); }, 4000); }
+  function stop() { if (timer) clearInterval(timer); timer = null; }
+  document.querySelector('.car-prev').addEventListener('click', function () { go(idx - 1); play(); });
+  document.querySelector('.car-next').addEventListener('click', function () { go(idx + 1); play(); });
+  dotsWrap.addEventListener('click', function (e) {
+    var t = e.target.closest('.dot'); if (!t) return;
+    go(+t.dataset.i); play();
+  });
+  var car = document.querySelector('.carousel');
+  car.addEventListener('mouseenter', stop);
+  car.addEventListener('mouseleave', play);
+  car.addEventListener('focusin', stop);
+  car.addEventListener('focusout', play);
+  // swipe no celular
+  var vp = document.querySelector('.car-viewport'), sx = 0, sy = 0, touching = false;
+  vp.addEventListener('touchstart', function (e) { sx = e.touches[0].clientX; sy = e.touches[0].clientY; touching = true; stop(); }, { passive: true });
+  vp.addEventListener('touchend', function (e) {
+    if (!touching) return; touching = false;
+    var dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy;
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) go(dx < 0 ? idx + 1 : idx - 1);
+    play();
+  });
+  document.addEventListener('visibilitychange', function () { document.hidden ? stop() : play(); });
+  go(0);
+  play();
+
+  /* ----- FAQ (acordeão) ----- */
+  document.querySelectorAll('.faq-q').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      var panel = document.getElementById(btn.getAttribute('aria-controls'));
+      btn.setAttribute('aria-expanded', String(!open));
+      panel.style.maxHeight = open ? null : panel.scrollHeight + 'px';
+    });
+  });
+  window.addEventListener('resize', function () {
+    document.querySelectorAll('.faq-q[aria-expanded="true"]').forEach(function (btn) {
+      var p = document.getElementById(btn.getAttribute('aria-controls'));
+      p.style.maxHeight = p.scrollHeight + 'px';
+    });
+  });
+
+  /* ----- Animações de entrada ----- */
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>
